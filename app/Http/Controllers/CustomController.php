@@ -38,4 +38,16 @@ class CustomController extends Controller
         Auth::logout();
         return redirect()->route('login');
     }
+
+    public function passcode(Request $request)
+    {
+//        $request->validate([
+//            'pass_code'=>'required',
+//        ]);
+//        $user=User::where('passcode',$request->passcode)->first();
+//        if(isset($user)){
+//            return $user;
+//        }
+//        return $request;
+    }
 }

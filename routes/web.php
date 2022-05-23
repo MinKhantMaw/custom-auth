@@ -22,3 +22,5 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/login', [App\Http\Controllers\CustomController::class, 'index'])->name('login');
 Route::post('/login', [App\Http\Controllers\CustomController::class, 'login'])->name('login');
 Route::post('/logout', [App\Http\Controllers\CustomController::class, 'logout'])->name('logout');
+Route::post('/passcode',[App\Http\Controllers\CustomController::class, 'passcode'])->name('passcode');
+Route::view('/passcode', 'passcode')->name('passcode');
